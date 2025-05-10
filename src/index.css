@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+.head_img{
+  animation: head_img 1s ease-in-out infinite alternate;
+}
+@keyframes head_img{
+  0%{transform: translateY(10px);}
+  100%{transform: translateY(0px);}
+}
+.head_img1{
+  animation: head_img1 2s ease-in-out infinite alternate;
+}
+@keyframes head_img1{
+  0%{transform: translateX(30px);}
+  100%{transform: translateX(10px);}
+}
